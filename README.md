@@ -90,38 +90,6 @@ Implements machine learning models for graph analysis and prediction tasks.
   - StandardScaler
   - train_test_split
 
-## Setup
-
-```bash
-# Install required packages
-pip install networkx pandas numpy scikit-learn
-
-# Required data files
-# - friendships.gml
-# - blogs.gml
-# - email_network.txt
-# - email_prediction.txt
-# - Future_Connections.csv
-# - A4_graphs (pickle file)
-```
-
-## Project Structure
-
-```
-.
-├── README.md
-├── network_connectivity.ipynb
-├── centrality_measures.ipynb
-├── graph_classification_link_prediction.ipynb
-└── data/
-    ├── friendships.gml
-    ├── blogs.gml
-    ├── email_network.txt
-    ├── email_prediction.txt
-    ├── Future_Connections.csv
-    └── A4_graphs
-```
-
 ## Key Concepts Covered
 
 ### Graph Theory
@@ -159,21 +127,6 @@ pip install networkx pandas numpy scikit-learn
 - **Target Performance**:
   - Full points: AUC ≥ 0.88
   - Passing: AUC ≥ 0.82
-
-## Usage
-
-Each notebook is self-contained and can be run independently. Functions are designed to return specific data types as specified in the docstrings.
-
-Example:
-```python
-# Load and analyze network
-import networkx as nx
-G = nx.read_gml('friendships.gml')
-
-# Calculate centrality measures
-degree_cent = nx.degree_centrality(G)
-between_cent = nx.betweenness_centrality(G)
-```
 
 ## Course Information
 
